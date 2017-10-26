@@ -281,7 +281,7 @@ migrate_version() {
     echo "ERROR: "
     echo "  Cannot upgrade from Mattermost version ${CACHE_VERSION} to ${MATTERMOST_VERSION}."
     echo "  Mattermost version ${CACHE_VERSION} must be upgraded to version 3.0.2 or 3.1.0 first."
-    echo "  Please run jasl8r/mattermost:3.1.0 followed by jasl8r/mattermost:${MATTERMOST_VERSION}"
+    echo "  Please run jasl8r/mattermost:3.1.0 followed by doublemalt/mattermost:${MATTERMOST_VERSION}"
     echo "  Cannot continue. Aborting!"
     echo
     return 1
@@ -299,7 +299,7 @@ migrate_version() {
       exec 3<> /tmp/fifo
       echo YES > /tmp/fifo
       echo ${MATTERMOST_MIGRATION_DEFAULT_TEAM} > /tmp/fifo
-      ./bin/platform -config ${MATTERMOST_CONF_DIR}/config.json -upgrade_db_30 < /tmp/fifo
+      /bin/platform -config ${MATTERMOST_CONF_DIR}/config.json -upgrade_db_30 < /tmp/fifo
       rm /tmp/fifo
     else
       echo

@@ -11,7 +11,7 @@ mysql:
 
 mattermost:
   restart: always
-  image: jasl8r/mattermost:3.4.0-1
+  image: doublemalt/mattermost:4.2.1
   links:
     - mysql:mysql
   ports:
