@@ -1,6 +1,8 @@
 
 # Docker Mattermost
 
+> Based on [jasl8r's great work](https://github.com/jasl8r/docker-mattermost)
+
 - [Introduction](#introduction)
     - [Changelog](CHANGELOG.md)
 - [Contributing](#contributing)
