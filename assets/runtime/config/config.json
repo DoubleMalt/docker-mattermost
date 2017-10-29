@@ -13,7 +13,7 @@
         "MaximumLoginAttempts": {{MATTERMOST_MAX_LOGIN_ATTEMPTS}},
         "SegmentDeveloperKey": "{{MATTERMOST_SEGMENT_KEY}}",
         "GoogleDeveloperKey": "{{MATTERMOST_GOOGLE_KEY}}",
-        "EnableOAuthServiceProvider": false,
+        "EnableOAuthServiceProvider": {{MATTERMOST_ENABLE_OAUTH_PROVIDER}},
         "EnableIncomingWebhooks": {{MATTERMOST_ENABLE_INCOMING_WEBHOOKS}},
         "EnableOutgoingWebhooks": {{MATTERMOST_ENABLE_OUTGOING_WEBHOOKS}},
         "EnableCommands": {{MATTERMOST_ENABLE_SLASH_COMMANDS}},
