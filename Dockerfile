@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER christoph@doublemalt.net
 
-ENV MATTERMOST_VERSION=4.3.1 \
+ENV MATTERMOST_VERSION=5.1.0 \
     MATTERMOST_HOME="/opt/mattermost"
 
 ENV MATTERMOST_DATA_DIR="${MATTERMOST_HOME}/data" \
