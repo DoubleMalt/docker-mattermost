@@ -53,7 +53,7 @@ Automated builds of the image are available on [Dockerhub](https://hub.docker.co
 
 
 ```bash
-docker pull doublemalt/mattermost:4.3.1
+docker pull doublemalt/mattermost:5.3.1
 ```
 
 You can also pull the `latest` tag which is built from the repository *HEAD*
@@ -216,7 +216,7 @@ We are now ready to start the Mattermost application.
 ```bash
 docker run --name mattermost -d --link mattermost-mysql:mysql \
     --volume /srv/docker/mattermost/mattermost:/opt/mattermost/data \
-    doublemalt/mattermost:4.3.1
+    doublemalt/mattermost:5.3.1
 ```
 
 Here the image will also automatically fetch the `MYSQL_DATABASE`, `MYSQL_USER` and `MYSQL_PASSWORD` variables from the mysql container as they are specified in the `docker run` command for the mysql container. This is made possible using the magic of docker links and works with the following images:

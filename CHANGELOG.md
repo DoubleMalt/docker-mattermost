@@ -4,6 +4,15 @@ This file only reflects the changes that are made in this image. Please refer to
 the Mattermost [CHANGELOG](http://docs.mattermost.com/administration/changelog.html)
 for the list of changes in Mattermost.
 
+## 5.3.1
+
+- mattermost 5.3.1
+
+
+## 5.1.0
+
+- mattermost 5.1.0
+
 ## 4.2.1
 
 - mattermost 4.2.1
